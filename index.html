@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="otp-card">
+        <h1>OTP Doğrulaması</h1>
+        <p>Doğrulama kodu ****12345'e gönderildi</p>
+        <div class="otp-card-inputs">
+            <input type="text" maxlength="1" onkeypress="return isNumberKey(event)" autofocus>
+            <input type="text" maxlength="1" onkeypress="return isNumberKey(event)">
+            <input type="text" maxlength="1" onkeypress="return isNumberKey(event)">
+            <input type="text" maxlength="1" onkeypress="return isNumberKey(event)">
+            <input type="text" maxlength="1" onkeypress="return isNumberKey(event)">
+            <input type="text" maxlength="1" onkeypress="return isNumberKey(event)">
+        </div>
+        <p>OTP Kodu alamadım <a href="#" onclick="uyarı()">Yeniden Gönder</a></p>
+        <button disabled="disabled" onclick="onay()">Doğrula</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
